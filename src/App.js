@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { Routes, Route } from 'react-router';
+import DrawerAppBar from './components/Navbar';
+import Home from './components/Home';
+import Echange from './components/Echange';
+import Documentation from './components/Documentation';
+import Information from './components/Information';
+import Apropos from './components/Apropos';
+
+import { Box } from '@mui/material';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return( 
+    <Box>
+        <DrawerAppBar/>
+            <Routes>
+                <Route path = "/" element={<Home/>}/> 
+                <Route path = "/Acceuil" element={<Home/>}/> 
+                <Route path = "/Echange" element = { <Echange/>}/> 
+                <Route path = "/Documentation" element = {<Documentation/>}/> 
+                <Route path = "/Information" element = { < Information />}/> 
+                <Route path = "/Apropos" element = { < Apropos />}/>
+            </Routes>
+        </Box>
+    );
 }
 
 export default App;

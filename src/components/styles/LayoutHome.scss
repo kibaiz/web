@@ -1,0 +1,52 @@
+.content {
+    grid-auto-columns: auto;
+    padding: 0.2rem;
+}
+
+.title {
+    font-size: 5rem;
+    color: #6528F7;
+    text-align: center;
+    animation-name: moveLeft;
+    animation-duration: 1.5s;
+}
+
+.title2 {
+    font-size: 1.5rem;
+    color: #40128B;
+    text-align: center;
+    animation-name: moveRight;
+    animation-duration: 1.5s;
+}
+
+.card {
+    text-align: center;
+}
+
+.typewrite {
+    color: #001E6C;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
