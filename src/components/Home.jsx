@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Grid} from '@mui/material';
 import LayoutHome from './pages/LayoutHome';
-import Footer from './pages/Footer';
+
 
 const Home = () =>{
     return (
@@ -11,7 +11,6 @@ const Home = () =>{
                     <LayoutHome/>
                 </Grid>
             </Grid>
-            <Footer/>
         </Box>
     );
 };

@@ -15,7 +15,7 @@ import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import Logo from './images/logo.png';
 import {Link} from 'react-router-dom';
 
-const pages = ['Acceuil', 'Echange', 'Documentation' , 'Information' , 'Apropos'];
+const pages = ['Acceuil', 'Echange', 'Documentation' , 'Information' , 'A propos'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {

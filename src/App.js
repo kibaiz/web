@@ -6,14 +6,14 @@ import Echange from './components/Echange';
 import Documentation from './components/Documentation';
 import Information from './components/Information';
 import Apropos from './components/Apropos';
-
+import Footer from './components/pages/Footer';
 import { Box } from '@mui/material';
 
 
 function App() {
     return( 
-    <Box>
-        <DrawerAppBar/>
+        <Box>
+            <DrawerAppBar/>
             <Routes>
                 <Route path = "/" element={<Home/>}/> 
                 <Route path = "/Acceuil" element={<Home/>}/> 
@@ -22,6 +22,7 @@ function App() {
                 <Route path = "/Information" element = { < Information />}/> 
                 <Route path = "/Apropos" element = { < Apropos />}/>
             </Routes>
+            <Footer/>
         </Box>
     );
 }
